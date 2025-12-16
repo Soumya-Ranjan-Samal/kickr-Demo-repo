@@ -17,6 +17,10 @@ app.get('/', (req,res)=>{
     }
 });
 
+app.get('/newbrnchrought', (req,res)=>{
+    res.send('this is from the new branch');
+});
+
 app.listen(port, ()=>{
     console.log('Server Statred Listening...');
 });
