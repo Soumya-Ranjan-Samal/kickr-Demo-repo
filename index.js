@@ -21,10 +21,6 @@ app.get('/newbrnchrought', (req,res)=>{
     res.send('this is from the new branch');
 });
 
-app.get('/wrong',(req,res)=>{
-    res.send('This is a wrong functionality which needs to be deleted');
-})
-
 app.listen(port, ()=>{
     console.log('Server Statred Listening...');
 });
