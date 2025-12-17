@@ -1,7 +1,12 @@
 import express from "express";
+import { userrouter } from "./controllers/usersign.js";
 
 const port = 3000;
 const app = express();
+
+app.use(express.json());
+
+app.use('/user', userrouter);
 
 app.get('/', (req,res)=>{
     let now = new Date();
